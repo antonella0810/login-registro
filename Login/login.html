@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<di>, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="./Assets/img/Oso.svg">
+        <h2> Iniciar Sesión </h2>
+        <form>
+            <p>Usuario</p>
+            <input class="inputs" type="text" name="usuario" placeholder="Ingrese su usuario" required>
+            <p>Contraseña</p>
+            <input class="inputs" type="password" name="password" placeholder="Ingrese su contraseña"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required>
+            <input class="boton" type="submit" name="sign-in" value="Entrar">
+            <a class="olvido-contraseña" href="#">¿Olvidaste tu contraseña?</a>
+        </form>
+    </div>
+</body>
+
+</html>
